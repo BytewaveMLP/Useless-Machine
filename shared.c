@@ -16,10 +16,39 @@ void playMusicNote(int freq, int timeMs) {
 }
 
 task playSong() {
-	playMusicNote(D5, 750);
-	playMusicNote(G5, 750);
-	playMusicNote(G5, 375);
-	playMusicNote(A5, 375);
+	while (true) {
+		playMusicNote(D5, 750);
+		playMusicNote(G5, 750);
+		playMusicNote(G5, 375);
+		playMusicNote(A5, 375);
+		playMusicNote(G5, 375);
+		playMusicNote(F5S, 375);
+		playMusicNote(E5, 750);
+		playMusicNote(E5, 750);
+		playMusicNote(E5, 750);
+		playMusicNote(A5, 750);
+		playMusicNote(A5, 375);
+		playMusicNote(B5, 375);
+		playMusicNote(A5, 375);
+		playMusicNote(G5, 375);
+		playMusicNote(F5S, 750);
+		playMusicNote(D5, 750);
+		playMusicNote(D5, 750);
+		playMusicNote(B5, 750);
+		playMusicNote(B5, 375);
+		playMusicNote(C6, 375);
+		playMusicNote(B5, 375);
+		playMusicNote(A5, 375);
+		playMusicNote(G5, 750);
+		playMusicNote(E5, 750);
+		playMusicNote(D5, 375);
+		playMusicNote(D5, 375);
+		playMusicNote(E5, 750);
+		playMusicNote(A5, 750);
+		playMusicNote(F5S, 750);
+		playMusicNote(G5, 1500);
+		sleep(1000);
+	}
 }
 
 task blinkLights() {
@@ -30,9 +59,9 @@ task blinkLights() {
 
 		if (r < 33) {
 			state = ledGreenPulse;
-		} else if (r < 66) {
+			} else if (r < 66) {
 			state = ledOrangePulse;
-		} else {
+			} else {
 			state = ledRedPulse;
 		}
 
