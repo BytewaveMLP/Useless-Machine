@@ -2,5 +2,5 @@
 
 task main() {
 	startTask(blinkLights);
-	startTask(playMusic);
+	startTask(playSong);
 }
