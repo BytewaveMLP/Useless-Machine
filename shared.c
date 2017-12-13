@@ -56,7 +56,7 @@ task scream() {
 		playMusicNote(i, 1);
 	}
 
-	playMusicNote(1724, 750);
+	playMusicNote(1724, 600);
 
 	for (int i = 1724; i >= 1000; i -= 36) {
 		playMusicNote(i, 1);
