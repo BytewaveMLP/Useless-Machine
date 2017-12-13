@@ -51,6 +51,18 @@ task playSong() {
 	}
 }
 
+task scream() {
+	for (int i = 1324; i <= 1724; i += 49) {
+		playMusicNote(i, 1);
+	}
+
+	playMusicNote(1724, 1000);
+
+	for (int i = 1724; i >= 1000; i -= 36) {
+		playMusicNote(i, 1);
+	}
+}
+
 task blinkLights() {
 	int state;
 
