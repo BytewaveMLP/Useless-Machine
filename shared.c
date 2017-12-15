@@ -71,11 +71,9 @@ task blinkLights() {
 	while (true) {
 		int r = random(99);
 
-		if (r < 33) {
+		if (r < 50) {
 			state = ledGreenPulse;
-			} else if (r < 66) {
-			state = ledOrangePulse;
-			} else {
+		} else {
 			state = ledRedPulse;
 		}
 

@@ -2,7 +2,8 @@
 
 task main() {
 	startTask(blinkLights);
-	// startTask(playSong);
+	setSoundVolume(25);
+	//startTask(playSong);
 	startTask(scream);
 	while (true) { sleep(1000); }
 }
