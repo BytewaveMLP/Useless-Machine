@@ -71,9 +71,9 @@ task blinkLights() {
 
 		if (r < 33) {
 			state = ledGreenPulse;
-			} else if (r < 66) {
+		} else if (r < 66) {
 			state = ledOrangePulse;
-			} else {
+		} else {
 			state = ledRedPulse;
 		}
 
