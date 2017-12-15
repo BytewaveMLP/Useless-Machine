@@ -31,7 +31,7 @@ task drive(){
 			setMotorSpeed(right, -25);
 			if(startScream){
 			scream();
-			startScream=false;
+			startScream=false;	
 		}
 			break;
 
@@ -41,11 +41,11 @@ task drive(){
 }
 task sense(){
 	while(true){
-
+	
 		state=PULL_STATE;
 		if (getUSDistance(sonic)<100)
 			state=FEAR_STATE;
-
+		
 		sleep(100);
 	}
 }
