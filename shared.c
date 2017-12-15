@@ -11,7 +11,7 @@
 #define F6S 1480
 
 void playMusicNote(int freq, int timeMs) {
-	playTone(freq, timeMs / 10);
+	playImmediateTone(freq, timeMs / 10);
 	sleep(timeMs);
 }
 
@@ -51,7 +51,8 @@ task playSong() {
 	}
 }
 
-task scream() {
+void scream() {
+
 	for (int i = 1324; i <= 1724; i += 49) {
 		playMusicNote(i, 1);
 	}
@@ -61,6 +62,7 @@ task scream() {
 	for (int i = 1724; i >= 1000; i -= 36) {
 		playMusicNote(i, 1);
 	}
+
 }
 
 task blinkLights() {
