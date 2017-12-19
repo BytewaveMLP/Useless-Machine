@@ -46,7 +46,7 @@ task sense(){
 	while(true){
 
 		state=PULL_STATE;
-		if (getUSDistance(sonic)<100)
+		if (getUSDistance(sonic)<60)
 			state=FEAR_STATE;
 
 		sleep(100);
@@ -55,7 +55,7 @@ task sense(){
 
 task main()
 {
-	setSoundVolume(10);
+	setSoundVolume(100);
 	startTask(blinkLights);
 	startTask(playSong);
 	startTask(sense);
